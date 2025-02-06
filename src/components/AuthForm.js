@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './AuthForm.css';
 
 function AuthForm() {
   const [activeTab, setActiveTab] = useState('login');
+  const navigate = useNavigate(); // Initialize the navigate function
 
   const handleTabSwitch = (tab) => {
     setActiveTab(tab);
+  };
+
+  const handleLoginClick = () => {
+    // Redirect to the /dashboard page
+    navigate('/dashboard');
   };
 
   return (
@@ -46,7 +53,13 @@ function AuthForm() {
               <a href="#otp" className="otp-link">Login With OTP</a>
             </div>
             <div className="button-group">
-              <button type="submit" className="btn primary-btn">Login</button>
+              <button
+                type="button"
+                className="btn primary-btn"
+                onClick={handleLoginClick} // Trigger the redirect on click
+              >
+                Login
+              </button>
               <button type="button" className="btn google-btn">
                 <img
                   src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg"
