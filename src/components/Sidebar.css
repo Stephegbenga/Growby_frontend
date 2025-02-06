@@ -1,0 +1,70 @@
+/* Sidebar container */
+.sidebar {
+    width: 220px;               /* Set sidebar width */
+    height: 100vh;              /* Full viewport height */
+    background-color: #fff;     /* White background */
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    position: fixed;            /* Fixed so it stays in place */
+    top: 0;
+    left: 0;
+    overflow-y: auto;           /* Scroll if content exceeds viewport height */
+  }
+  
+  /* Header / Brand area */
+  .sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .sidebar-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  /* Navigation */
+  .sidebar-nav {
+    padding: 10px 0;
+    flex: 1; /* so the nav takes remaining vertical space */
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-nav li {
+    margin-bottom: 10px;
+  }
+  
+  /* Links */
+  .sidebar-nav a {
+    display: flex;         /* so the icon and text are on the same line */
+    align-items: center;   /* center vertically */
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+  }
+  
+  /* Icon next to text */
+  .sidebar-icon {
+    margin-right: 8px;
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+  
+  /* Active link highlight */
+  .active-link {
+    background-color: #f0f0f0;  /* Highlight the active page */
+    border-left: 4px solid #ff6600;
+    color: #ff6600;
+  }
+  
+  .sidebar-nav a:hover {
+    background-color: #f7f7f7;
+  }
+  

@@ -1,0 +1,33 @@
+.footer {
+    background-color: #333;      /* Dark background to match the screenshot */
+    color: #fff;                 /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Disclaimer text */
+  .footer-disclaimer {
+    margin-bottom: 10px;
+    max-width: 800px;
+    margin: 0 auto 10px auto; /* center and add spacing below */
+  }
+  
+  /* Links inside footer */
+  .footer-disclaimer a,
+  .footer-copyright a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  
+  .footer-disclaimer a:hover,
+  .footer-copyright a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Copyright text */
+  .footer-copyright {
+    font-size: 0.85rem;
+  }
+  
